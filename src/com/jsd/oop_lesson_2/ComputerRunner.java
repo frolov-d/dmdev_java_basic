@@ -9,7 +9,8 @@ public class ComputerRunner {
 //        System.out.println("Ram: " + computer.ram);
 //        System.out.println("Ssd: " + computer.ssd);
 
-        Computer computer2 = new Computer(128, 16);
+        Computer computer2 = new Computer(128, 16L);
         computer2.printState();
+        computer2.load(true);
     }
 }

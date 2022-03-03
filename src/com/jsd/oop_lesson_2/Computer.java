@@ -2,20 +2,32 @@ package com.jsd.oop_lesson_2;
 
 public class Computer {
 
-    int ssd = 500;
-    int ram = 1024;
+    private int ssd = 500;
+    private long ram = 1024;
 
-    Computer() {
+    public Computer() {
         System.out.println("Я был создан");
     }
 
-    public Computer(int ssd, int ram) {
+    public Computer(int ssd, long ram) {
+        this.ssd = ssd;
+        this.ram = ram;
+    }
+
+    public Computer(long ram, int ssd) {
         this.ssd = ssd;
         this.ram = ram;
     }
 
     void load() {
         System.out.println("Я загрузился");
+    }
+
+    void load(boolean open) {
+        System.out.println("Я загрузился");
+        if (open) {
+            System.out.println("Я открыл крышку");
+        }
     }
 
     void printState() {
