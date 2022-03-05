@@ -1,4 +1,4 @@
-package com.jsd.oop_lesson_2;
+package com.jsd.oop.oop_lesson_2;
 
 public class Computer {
 

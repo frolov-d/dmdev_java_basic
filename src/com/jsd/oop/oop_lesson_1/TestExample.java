@@ -1,4 +1,4 @@
-package com.jsd.oop_lesson_1;
+package com.jsd.oop.oop_lesson_1;
 
 public class TestExample {
 
