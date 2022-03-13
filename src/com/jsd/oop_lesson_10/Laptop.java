@@ -4,9 +4,21 @@ public class Laptop extends Computer {
 
     private int weight;
 
+    {
+        System.out.println("init block Laptop");
+    }
+
+    static {
+        System.out.println("static block Laptop");
+    }
+
     public Laptop(Ssd ssd, Ram ram, int weight) {
-        super(ssd, ram);
+        super();
         this.weight = weight;
+    }
+
+    public Laptop() {
+        System.out.println("Constructor laptop");
     }
 
     public void open() {
