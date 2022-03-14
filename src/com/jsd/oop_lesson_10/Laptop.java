@@ -13,7 +13,7 @@ public final class Laptop extends Computer {
     }
 
     public Laptop(Ssd ssd, Ram ram, int weight) {
-        super();
+        super(ssd, ram);
         this.weight = weight;
     }
 
@@ -23,7 +23,14 @@ public final class Laptop extends Computer {
 
     @Override
     public void load() {
-        System.out.println();
+        open();
+        System.out.println("Я загрузился");
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("weight: " + weight);
     }
 
     public void open() {

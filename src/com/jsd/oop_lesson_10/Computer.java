@@ -24,6 +24,10 @@ public abstract class Computer {
 
     public abstract void load();
 
+    public void print() {
+        System.out.println("Ssd " + ssd.getValue() + ", ram: " + ram.getValue());
+    }
+
 //    public void load() {
 //        System.out.println("Я загрузился");
 //    }
