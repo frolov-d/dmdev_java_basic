@@ -1,6 +1,6 @@
 package com.jsd.oop_lesson_10;
 
-public class Laptop extends Computer {
+public final class Laptop extends Computer {
 
     private int weight;
 
@@ -19,6 +19,11 @@ public class Laptop extends Computer {
 
     public Laptop() {
         System.out.println("Constructor laptop");
+    }
+
+    @Override
+    public void load() {
+        System.out.println();
     }
 
     public void open() {

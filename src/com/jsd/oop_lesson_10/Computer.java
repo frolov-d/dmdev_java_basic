@@ -1,6 +1,6 @@
 package com.jsd.oop_lesson_10;
 
-public class Computer {
+public abstract class Computer {
 
     private Ssd ssd;
     private Ram ram;
@@ -22,9 +22,11 @@ public class Computer {
         System.out.println("Constructor computer");
     }
 
-    public void load() {
-        System.out.println("Я загрузился");
-    }
+    public abstract void load();
+
+//    public void load() {
+//        System.out.println("Я загрузился");
+//    }
 
     public Ssd getSsd() {
         return ssd;
