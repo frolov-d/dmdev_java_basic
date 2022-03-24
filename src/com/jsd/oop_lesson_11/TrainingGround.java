@@ -5,7 +5,9 @@ public class TrainingGround {
     public static void main(String[] args) {
         Hero warrior = new Warrior("Боромир", 15);
         Hero mage = new Mage("Гендальф", 20);
-        Hero archer = new Archer("Леголас", 10);
+        Archer archer = new Archer("Леголас", 10);
+
+        Archer.Wolf second_wolf = archer.new Wolf("Second wolf", 11);
 
         Enemy enemy = new Enemy("Зомби", 100);
 
