@@ -1,6 +1,8 @@
 package com.jsd.oop_lesson_11;
 
-public class Mage extends Hero {
+import com.jsd.lesson_13.weapon.MagicWeapon;
+
+public class Mage<T extends MagicWeapon> extends Hero<T> {
 
     public Mage(String name, int damage) {
         super(name, damage);

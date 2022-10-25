@@ -1,6 +1,8 @@
 package com.jsd.oop_lesson_11;
 
-public class Archer extends Hero {
+import com.jsd.lesson_13.weapon.RangeWeapon;
+
+public class Archer<T extends RangeWeapon> extends Hero<T> {
 
     private Wolf wolf;
 
